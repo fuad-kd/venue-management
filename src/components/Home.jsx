@@ -17,7 +17,7 @@ const Home = () => {
 
   const handlePostSubmit = (e) => {
     e.preventDefault();
-    alert("Post feature coming soon! You typed: " + postText);
+    alert("Post feature coming soon! You typed: FUD " + postText);
     setPostText('');
   };
 

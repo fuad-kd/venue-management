@@ -26,10 +26,12 @@ const Login = () => {
       <h2>Login</h2>
       <form onSubmit={handleLogin} style={styles.form}>
         <input 
-          type="email" 
-          placeholder="Email" 
-          onChange={(e) => setEmail(e.target.value)} 
-          style={styles.input}
+  type="email" 
+  placeholder="Email" 
+  value={email} 
+  onChange={(e) => setEmail(e.target.value)} 
+  autoComplete="email" // This tells the browser to suggest saved emails!
+  style={styles.input} // Assuming you have your styles here
         />
         <input 
           type="password" 
