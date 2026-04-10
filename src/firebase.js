@@ -18,5 +18,11 @@ const app = initializeApp(firebaseConfig);
 // Initialize Firebase services and export them so other files can use them
 export const auth = getAuth(app);
 export const db = getFirestore(app);
+// Inside your firebase.js
+import { getStorage } from "firebase/storage";
+// ... your other imports
+
+export const storage = getStorage(app);
+// ... your other exports
 
 export default app;
